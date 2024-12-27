@@ -21,11 +21,11 @@ Address translation in segmentation is the process of converting a logical addre
 translation ensures that a program can operate within its logical address space while the operating system manages the complexities of mapping it to physical memory. 
 The logical address in segmentation consists of two components: the segment number and the offset within the segment.
 
-The translation process begins when the CPU generates a logical address during program execution. 
-The segment number is used to index into the segment table, where the corresponding entry for that segment is located.
-The segment table entry contains the base address of the segment in physical memory and the limit of the segment.
+The translation process begins when the CPU generates a logical address during program execution. <br>
+The segment number is used to index into the segment table, where the corresponding entry for that segment is located.<br>
+The segment table entry contains the base address of the segment in physical memory and the limit of the segment.<br>
 The CPU performs the following steps for translation:
 
-*Segment Validation:* The CPU checks if the segment number is valid and within the range of the segment table entries. If not, a segmentation fault occurs.
-*Offset Validation:* The CPU verifies that the offset provided in the logical address does not exceed the segment's limit. If the offset is invalid, a segmentation fault is triggered.
+*Segment Validation:* The CPU checks if the segment number is valid and within the range of the segment table entries. If not, a segmentation fault occurs.<br>
+*Offset Validation:* The CPU verifies that the offset provided in the logical address does not exceed the segment's limit. If the offset is invalid, a segmentation fault is triggered.<br>
 *Physical Address Calculation:* The CPU adds the base address of the segment to the offset to compute the physical address.
