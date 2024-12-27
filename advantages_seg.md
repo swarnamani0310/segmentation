@@ -1,4 +1,4 @@
-###Advantages of Segmentation
+###Advantages of Segmentation###
 
 **Logical Memory Organization:
 Segmentation aligns memory management with the logical structure of a program, making it intuitive for developers to organize functions, data, and other program elements.
